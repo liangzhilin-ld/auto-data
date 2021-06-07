@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.autotest.data.mapper.ScenarioReportMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.autotest.data.mode.ScenarioReport">
+        <id column="ID" property="id" />
+        <result column="HISTORY_ID" property="historyId" />
+        <result column="JOB_ID" property="jobId" />
+        <result column="PROJECT_ID" property="projectId" />
+        <result column="TC_SUITE" property="tcSuite" />
+        <result column="TC_ID" property="tcId" />
+        <result column="TC_NAME" property="tcName" />
+        <result column="TC_RESULT" property="tcResult" />
+        <result column="TC_RUNS_NUM" property="tcRunsNum" />
+        <result column="TC_DURATION" property="tcDuration" />
+        <result column="TC_TYPE" property="tcType" />
+        <result column="HASHTREE" property="hashtree" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, HISTORY_ID, JOB_ID, PROJECT_ID, TC_SUITE, TC_ID, TC_NAME, TC_RESULT, TC_RUNS_NUM, TC_DURATION, TC_TYPE, HASHTREE, CREATE_TIME, UPDATE_TIME
+    </sql>
+
+</mapper>

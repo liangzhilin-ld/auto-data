@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.autotest.data.mapper.ApiReportMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.autotest.data.mode.ApiReport">
+        <id column="ID" property="id" />
+        <result column="JOB_ID" property="jobId" />
+        <result column="HISTORY_ID" property="historyId" />
+        <result column="CASE_ID" property="caseId" />
+        <result column="TC_SUITE" property="tcSuite" />
+        <result column="TC_NAME" property="tcName" />
+        <result column="TC_RESULT" property="tcResult" />
+        <result column="TC_DURATION" property="tcDuration" />
+        <result column="TC_HEADER" property="tcHeader" />
+        <result column="TC_LOG" property="tcLog" />
+        <result column="TC_REQUEST" property="tcRequest" />
+        <result column="TC_RESPONSE" property="tcResponse" />
+        <result column="TC_ASSERT" property="tcAssert" />
+        <result column="TC_RUNS_NUM" property="tcRunsNum" />
+        <result column="CREATE_TIME" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, JOB_ID, HISTORY_ID, CASE_ID, TC_SUITE, TC_NAME, TC_RESULT, TC_DURATION, TC_HEADER, TC_LOG, TC_REQUEST, TC_RESPONSE, TC_ASSERT, TC_RUNS_NUM, CREATE_TIME
+    </sql>
+
+</mapper>

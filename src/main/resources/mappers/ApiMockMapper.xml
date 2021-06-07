@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.autotest.data.mapper.ApiMockMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.autotest.data.mode.ApiMock">
+        <id column="ID" property="id" />
+        <result column="CASE_ID" property="caseId" />
+        <result column="URL" property="url" />
+        <result column="NAME" property="name" />
+        <result column="COMMENT" property="comment" />
+        <!--<result column="API_PRE" property="apiPre" />-->
+        <result column="REQUEST_DATA" property="requestData" />
+        <result column="RESPONSE_DATA" property="responseData" />
+        <!--<result column="TC_POST" property="tcPost" />-->
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="HASHTREE" property="hashtree" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, CASE_ID, URL, NAME, COMMENT, REQUEST_DATA, RESPONSE_DATA, CREATE_TIME, HASHTREE
+    </sql>
+
+</mapper>

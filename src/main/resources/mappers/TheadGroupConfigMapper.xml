@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.autotest.data.mapper.TheadGroupConfigMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.autotest.data.mode.TheadGroupConfig">
+        <result column="JOB_ID" property="jobId" />
+        <result column="ID" property="id" />
+        <result column="NAME" property="name" />
+        <result column="ON_SAMPLE_ERROR" property="onSampleError" />
+        <result column="NUM_THREADS" property="numThreads" />
+        <result column="RAMP_UP" property="rampUp" />
+        <result column="LOOP_COUNT" property="loopCount" />
+        <result column="DELAY_THRED_CREATION" property="delayThredCreation" />
+        <result column="SCHEDULER" property="scheduler" />
+        <result column="DURATION" property="duration" />
+        <result column="DELAY" property="delay" />
+        <result column="SAMPLER" property="sampler" />
+        <result column="LOGIC_CONTROLLER" property="logicController" />
+        <result column="TIMER" property="timer" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        JOB_ID, ID, NAME, ON_SAMPLE_ERROR, NUM_THREADS, RAMP_UP, LOOP_COUNT, DELAY_THRED_CREATION, SCHEDULER, DURATION, DELAY, SAMPLER, LOGIC_CONTROLLER, TIMER
+    </sql>
+
+</mapper>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.autotest.data.mapper.ApiReportHistoryListMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.autotest.data.mode.ApiReportHistoryList">
+        <id column="ID" property="id" />
+        <result column="JOB_ID" property="jobId" />
+        <result column="JOB_NAME" property="jobName" />
+        <result column="SER_VERSION" property="serVersion" />
+        <result column="TC_TOTAL" property="tcTotal" />
+        <result column="TC_PASSED" property="tcPassed" />
+        <result column="TC_FAILED" property="tcFailed" />
+        <result column="START_TIME" property="startTime" />
+        <result column="END_TIME" property="endTime" />
+        <result column="NOTIFY_TYPE" property="notifyType" />
+        <result column="CREATE_TIME" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, JOB_ID, JOB_NAME, SER_VERSION, TC_TOTAL, TC_PASSED, TC_FAILED, START_TIME, END_TIME, NOTIFY_TYPE, CREATE_TIME
+    </sql>
+
+</mapper>

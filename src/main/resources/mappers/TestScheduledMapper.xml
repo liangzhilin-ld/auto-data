@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.autotest.data.mapper.TestScheduledMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.autotest.data.mode.TestScheduled">
+        <id column="JOB_ID" property="jobId" />
+        <result column="JOB_NAME" property="jobName" />
+        <result column="TC_CASEIDS" property="tcCaseids" />
+        <result column="JOB_STATUS" property="jobStatus" />
+        <result column="SER_VERSION" property="serVersion" />
+        <result column="EXPRESSION" property="expression" />
+        <result column="NUM_OF_CONCURRENT" property="numOfConcurrent" />
+        <result column="RETRY" property="retry" />
+        <result column="START_TIME" property="startTime" />
+        <result column="END_TIME" property="endTime" />
+        <result column="NOTIFY_TYPE" property="notifyType" />
+        <result column="CREATE_TIME" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        JOB_ID, JOB_NAME, TC_CASEIDS, JOB_STATUS, SER_VERSION, EXPRESSION, NUM_OF_CONCURRENT, RETRY, START_TIME, END_TIME, NOTIFY_TYPE, CREATE_TIME
+    </sql>
+
+</mapper>

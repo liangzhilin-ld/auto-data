@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.autotest.data.mapper.ScenarioTestcaseMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.autotest.data.mode.ScenarioTestcase">
+        <id column="ID" property="id" />
+        <result column="PROJECT_ID" property="projectId" />
+        <result column="SCENARIO_NAME" property="scenarioName" />
+        <result column="SUITE_ID" property="suiteId" />
+        <result column="PRIORITY" property="priority" />
+        <result column="DIRECTOR" property="director" />
+        <result column="COMMENTS" property="comments" />
+        <result column="TYPE" property="type" />
+        <result column="HASHTREE" property="hashtree" />
+        <result column="ARGUMENTS" property="arguments" />
+        <result column="STATUS" property="status" />
+        <result column="TAG" property="tag" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, PROJECT_ID, SCENARIO_NAME, SUITE_ID, PRIORITY, DIRECTOR, COMMENTS, TYPE, HASHTREE, ARGUMENTS, STATUS, TAG, CREATE_TIME, UPDATE_TIME
+    </sql>
+
+</mapper>

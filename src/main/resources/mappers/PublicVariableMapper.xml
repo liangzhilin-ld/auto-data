@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.autotest.data.mapper.PublicVariableMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.autotest.data.mode.PublicVariable">
+        <id column="VAR_ID" property="varId" />
+        <result column="VAR_NAME" property="varName" />
+        <result column="VAR_TYPE" property="varType" />
+        <result column="VAR_KEY" property="varKey" />
+        <result column="VAR_VALUE" property="varValue" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        VAR_ID, VAR_NAME, VAR_TYPE, VAR_KEY, VAR_VALUE
+    </sql>
+
+</mapper>

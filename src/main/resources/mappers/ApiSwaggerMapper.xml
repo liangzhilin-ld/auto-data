@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.autotest.data.mapper.ApiSwaggerMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.autotest.data.mode.ApiSwagger">
+        <id column="API_URI" property="apiUri" />
+        <result column="ID" property="id" />
+        <result column="PROJECT_ID" property="projectId" />
+        <result column="SWG_TITLE" property="swgTitle" />
+        <result column="SERVICE_NAME" property="serviceName" />
+        <result column="MODULE_NAME" property="moduleName" />
+        <result column="MODULE_NAME_OLD" property="moduleNameOld" />
+        <result column="MODULE_DESC" property="moduleDesc" />
+        <result column="API_DESC" property="apiDesc" />
+        <result column="API_METHOD" property="apiMethod" />
+        <result column="API_IN" property="apiIn" />
+        <result column="API_PARAMETERS" property="apiParameters" />
+        <result column="API_EXAMPLE" property="apiExample" />
+        <result column="API_REPONSES" property="apiReponses" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, PROJECT_ID, SWG_TITLE, SERVICE_NAME, MODULE_NAME, MODULE_NAME_OLD, MODULE_DESC, API_DESC, API_URI, API_METHOD, API_IN, API_PARAMETERS, API_EXAMPLE, API_REPONSES, CREATE_TIME, UPDATE_TIME
+    </sql>
+
+</mapper>

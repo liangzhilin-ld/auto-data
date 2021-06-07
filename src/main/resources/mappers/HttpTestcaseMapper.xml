@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.autotest.data.mapper.HttpTestcaseMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.autotest.data.mode.HttpTestcase">
+        <id column="CASE_ID" property="caseId" />
+        <result column="PROJECT_ID" property="projectId" />
+        <result column="SUITE_ID" property="suiteId" />
+        <result column="SUITE_NAME" property="suiteName" />
+        <result column="API_PROTOCOL" property="apiProtocol" />
+        <result column="API_NAME" property="apiName" />
+        <result column="API_URI" property="apiUri" />
+        <result column="API_METHOD" property="apiMethod" />
+        <result column="API_IN" property="apiIn" />
+        <result column="PARAMETERS" property="parameters" />
+        <result column="HEADERS" property="headers" />
+        <result column="ARGUMENTS" property="arguments" />
+        <result column="HASHTREE" property="hashtree" />
+        <result column="ATTACHMENT" property="attachment" />
+        <result column="TAG" property="tag" />
+        <result column="PRIORITY" property="priority" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CASE_ID, PROJECT_ID, SUITE_ID, SUITE_NAME, API_PROTOCOL, API_NAME, API_URI, API_METHOD, API_IN, PARAMETERS, HEADERS, ARGUMENTS, HASHTREE, ATTACHMENT, TAG, PRIORITY, CREATE_TIME, UPDATE_TIME
+    </sql>
+
+</mapper>
